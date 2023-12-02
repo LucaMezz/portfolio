@@ -1,22 +1,17 @@
-# next-template
+# Portfolio
 
-A Next.js 13 template for building apps with Radix UI, Tailwind CSS, Jest, Prettier, ESLint.
+My personal portfolio website
 
 ## Usage
 
 ```bash
-npx create-next-app -e https://github.com/LucaMezz/nextjs-template
+git clone "https://github.com/LucaMezz/portfolio.git"
+
+yarn install
+
+yarn run dev
 ```
-
-## Features
-
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+© Luca Mezzavilla. All rights reserved.

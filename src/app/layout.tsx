@@ -1,12 +1,13 @@
-import "@/styles/globals.css"
-import { Metadata } from "next"
+import "@/styles/globals.css";
+import { Metadata } from "next";
 
-import { siteConfig } from "@/config/site"
-import { fontSans } from "@/lib/fonts"
-import { cn } from "@/lib/utils"
-import { SiteHeader } from "@/components/site-header"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider"
+import { siteConfig } from "@/config/site";
+import { fontSans } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+import Footer from "@/components/layout/footer";
+import { SiteHeader } from "@/components/layout/site-header";
+import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
+import { ThemeProvider } from "@/components/layout/theme-provider";
 
 export const metadata: Metadata = {
   title: {
@@ -23,16 +24,17 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-}
+};
 
 interface RootLayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
+        {/* eslint-disable-next-line @next/next/no-head-element */}
         <head />
         <body
           className={cn(
@@ -44,11 +46,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
               <div className="flex-1">{children}</div>
+              <Footer />
             </div>
-            <TailwindIndicator />
           </ThemeProvider>
         </body>
       </html>
     </>
-  )
+  );
 }
