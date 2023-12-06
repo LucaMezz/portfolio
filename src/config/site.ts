@@ -15,18 +15,21 @@ export const siteConfig = {
     {
       title: "Home",
       href: "/",
+      relative: "hero",
     },
     {
       title: "About",
       href: "/#about",
+      relative: "about",
     },
     {
       title: "Contact",
       href: "/#contact",
+      relative: "contact",
     },
     {
       title: "Blog",
-      href: "/blog",
+      href: "/blog/?page=1",
     },
   ],
   socials: [

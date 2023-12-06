@@ -11,7 +11,7 @@ const Projects = ({ className, ...props }: ProjectsProps) => {
       className={cn(className, "bg-muted py-24")}
       {...props}
     >
-      <div className="container">Projects</div>
+      <div className="container text-2xl">Projects</div>
     </section>
   );
 };

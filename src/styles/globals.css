@@ -9,6 +9,7 @@
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-shadow: 240 5% 92%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
@@ -37,11 +38,12 @@
   }
 
   .dark {
-    --background: 231 24% 3%;
+    --background: 240 20% 2.94%;
     --foreground: 213 31% 91%;
 
     --muted: 240 9% 6%;
     --muted-foreground: 220 9% 46%;
+    --muted-shadow: 240 20% 1%;
 
     --accent: 216 34% 17%;
     --accent-foreground: 210 40% 98%;
@@ -49,7 +51,7 @@
     --popover: 224 71% 4%;
     --popover-foreground: 215 20.2% 65.1%;
 
-    --border: 216 34% 17%;
+    --border: 220 9% 46%;
     --input: 216 34% 17%;
 
     --card: 224 71% 4%;

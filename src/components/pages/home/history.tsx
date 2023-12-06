@@ -12,8 +12,8 @@ const History = ({ className, ...props }: HistoryProps) => {
       {...props}
     >
       <div className="container grid grid-cols-2 gap-16">
-        <div className="bg-slate-500">Education</div>
-        <div className="bg-slate-500">Experience</div>
+        <div className="text-2xl">Education</div>
+        <div className="text-2xl">Experience</div>
       </div>
     </section>
   );

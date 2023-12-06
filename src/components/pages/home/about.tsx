@@ -7,7 +7,7 @@ export interface AboutProps extends React.HTMLAttributes<HTMLElement> {}
 const About = ({ className, ...props }: AboutProps) => {
   return (
     <section id="about" className={cn(className, "bg-muted py-24")} {...props}>
-      <div className="container">About</div>
+      <div className="container text-2xl">About</div>
     </section>
   );
 };

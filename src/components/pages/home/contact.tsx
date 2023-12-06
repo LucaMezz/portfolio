@@ -11,7 +11,7 @@ const Contact = ({ className, ...props }: ContactProps) => {
       className={cn(className, "bg-muted py-24")}
       {...props}
     >
-      <div className="container">Contact</div>
+      <div className="container text-2xl">Contact</div>
     </section>
   );
 };

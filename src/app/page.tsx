@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
@@ -11,13 +14,13 @@ import Technologies from "@/components/pages/home/technologies";
 
 export default function IndexPage() {
   return (
-    <>
+    <ParallaxProvider scrollAxis="vertical">
       <Hero />
       <About />
       <Technologies />
       <Projects />
       <History />
       <Contact />
-    </>
+    </ParallaxProvider>
   );
 }
