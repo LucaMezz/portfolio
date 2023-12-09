@@ -20,7 +20,7 @@ const Hero = ({ className, ...props }: HeroProps) => {
     <section
       className={cn(
         className,
-        "container flex h-[calc(100vh-5rem)] min-h-[48rem] flex-col gap-x-16"
+        "container flex h-[calc(100vh-5rem)] min-h-[48rem] flex-col gap-x-16 lg:min-h-0"
       )}
       id="hero"
       {...props}
@@ -34,7 +34,7 @@ const Hero = ({ className, ...props }: HeroProps) => {
               {"Luca \nMezzavilla"}
             </span>
           </h1>
-          <p className="text-2xl text-muted-foreground">Software Engineer</p>
+          <p className="text-xl text-muted-foreground">Software Engineer</p>
           <div className="mt-6 flex items-center gap-4">
             <Button className="bg-green-500">Download CV</Button>
             <Link
@@ -63,7 +63,7 @@ const Hero = ({ className, ...props }: HeroProps) => {
           />
         </div>
       </div>
-      <div className="hidden lg:inline">
+      <div className="mb-8 hidden lg:inline">
         <Button
           className="h-18 w-18 cursor-pointer rounded-full bg-green-500 p-4"
           asChild

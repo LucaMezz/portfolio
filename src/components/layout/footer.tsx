@@ -27,7 +27,7 @@ const Footer = ({ className, ...props }: FooterProps) => {
           itemClassName="text-xs lg:text-base"
         />
       </div>
-      <Separator color="#6B7280" />
+      <Separator className="bg-muted-foreground" />
       <div className="flex flex-col justify-between gap-4 lg:flex-row lg:gap-0">
         <p className="whitespace-pre-wrap text-xs text-muted-foreground lg:whitespace-normal lg:text-base">
           {"© Luca Mezzavilla. All rights reserved."}
