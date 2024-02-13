@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { BlogPost } from "@/app/blog/page";
 
 export interface BlogPostCardProps extends React.HTMLAttributes<HTMLElement> {
-  post: BlogPost
+  post: BlogPost;
 }
 
 const BlogPostCard = ({ className, post, ...props }: BlogPostCardProps) => {
@@ -25,19 +25,17 @@ const BlogPostCard = ({ className, post, ...props }: BlogPostCardProps) => {
           />
           <div className="flex w-full flex-col gap-4 px-4 pb-4">
             <div>
-              <h1 className="font-semibold">{ post.title }</h1>
+              <h1 className="font-semibold">{post.title}</h1>
               <div className="flex justify-between">
                 <h2 className="text-muted-foreground">
-                  {
-                    post.tags.map(tag => (
-                      <></>
-                    ))
-                  }
+                  {post.tags.map((tag) => (
+                    <></>
+                  ))}
                 </h2>
-                <h2 className="text-muted-foreground">{ post.date }</h2>
+                <h2 className="text-muted-foreground">{post.date}</h2>
               </div>
             </div>
-            <p className="text-sm">{ post.description }</p>
+            <p className="text-sm">{post.description}</p>
           </div>
         </div>
       </Link>

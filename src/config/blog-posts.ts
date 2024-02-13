@@ -9,7 +9,7 @@ const blogPosts: BlogPost[] = [
     thumbnailUrl: "",
     bodyMarkdown: "",
     tags: ["Technical"],
-  }
+  },
 ];
 
 export default blogPosts;

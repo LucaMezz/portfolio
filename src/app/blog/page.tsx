@@ -1,13 +1,14 @@
 "use client";
 
-import BlogPostCard from "@/components/pages/blog/blog-post-card";
-import ProjectCard from "@/components/pages/projects/project-card";
+import { ChangeEventHandler, useState } from "react";
+import { NextPage } from "next";
+import { Icon } from "@iconify/react";
+
+import blogPosts from "@/config/blog-posts";
 import Heading from "@/components/ui/heading";
 import { Input } from "@/components/ui/input";
-import blogPosts from "@/config/blog-posts";
-import { Icon } from "@iconify/react";
-import { NextPage } from "next";
-import { ChangeEventHandler, useState } from "react";
+import BlogPostCard from "@/components/pages/blog/blog-post-card";
+import ProjectCard from "@/components/pages/projects/project-card";
 
 export type BlogPostTag = "Technical" | "Guide";
 

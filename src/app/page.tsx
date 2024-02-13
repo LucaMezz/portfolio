@@ -1,12 +1,14 @@
 import { NextPage } from "next";
 import Link from "next/link";
 
+import blogPosts from "@/config/blog-posts";
 import education from "@/config/education";
 import experience from "@/config/experience";
 import projects from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import technologies from "@/config/technologies";
 import { buttonVariants } from "@/components/ui/button";
+import Footer from "@/components/layout/footer";
 import About from "@/components/pages/home/about";
 import Education from "@/components/pages/home/education";
 import Experience from "@/components/pages/home/experience";
@@ -14,8 +16,6 @@ import Featured from "@/components/pages/home/featured";
 import Hero from "@/components/pages/home/hero";
 import Projects from "@/components/pages/home/projects";
 import Technologies from "@/components/pages/home/technologies";
-import Footer from "@/components/layout/footer";
-import blogPosts from "@/config/blog-posts";
 
 const IndexPage: NextPage = () => {
   return (

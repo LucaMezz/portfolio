@@ -9,7 +9,10 @@ const education: Education[] = [
     start: "Feb 2023",
     end: "Present",
     grade: "GPA 4.0/4.0 | WAM 91.33/100",
-    description: ["Specialising in Advanced Computer Science", "Member of the Monash Association of Coding (MAC)"],
+    description: [
+      "Specialising in Advanced Computer Science",
+      "Member of the Monash Association of Coding (MAC)",
+    ],
   },
   {
     name: "Victorian Certificate of Education (VCE)",
