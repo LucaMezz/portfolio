@@ -14,6 +14,7 @@ import Featured from "@/components/pages/home/featured";
 import Hero from "@/components/pages/home/hero";
 import Projects from "@/components/pages/home/projects";
 import Technologies from "@/components/pages/home/technologies";
+import Footer from "@/components/layout/footer";
 
 const IndexPage: NextPage = () => {
   return (

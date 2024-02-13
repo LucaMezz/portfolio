@@ -20,6 +20,8 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/Luca_Mezzavilla",
     github: "https://github.com/LucaMezz",
-    docs: "",
+    linkedin: "https://www.linkedin.com/in/lucamezzavilla/",
+    resume: "/",
+    docs: "/",
   },
 };
