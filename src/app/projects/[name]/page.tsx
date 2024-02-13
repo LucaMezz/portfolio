@@ -26,7 +26,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ className, params, ...p
   return (
     <div className={cn(className, "mx-auto flex min-h-[calc(100vh-72px)] max-w-4xl flex-col items-start gap-8 bg-background p-8")} {...props}>
       <Heading>{ name }</Heading>
-      <Image src={project.thumbnailUrl} width={1920} height={1080} alt={`${name} Thumbnail`} className="w-full rounded-2xl" />
+      <Image src={project.thumbnailUrl} width={1920} height={1080} alt={`${name} Thumbnail`} className="w-full rounded-2xl border" />
       <div className="flex w-full justify-between gap-16">
         <div className="flex justify-between gap-4">
           <Button asChild>
