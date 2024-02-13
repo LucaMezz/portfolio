@@ -25,7 +25,7 @@ const IndexPage: NextPage = () => {
       <Technologies technologies={technologies} />
       <Experience experience={experience} />
       <Education education={education} />
-      <Featured />
+      {/* <Featured /> */}
     </div>
   );
 };

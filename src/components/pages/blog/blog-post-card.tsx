@@ -13,9 +13,9 @@ const BlogPostCard = ({ className, ...props }: BlogPostCardProps) => {
         <div className="flex w-full flex-col gap-4 text-clip rounded-md border transition-colors hover:bg-border">
           <Image
             src={""}
-            alt={`Image of my ${""} project`}
-            width={180}
-            height={100}
+            alt={""}
+            width={1920}
+            height={1080}
             className="w-full"
           />
           <div className="flex w-full flex-col gap-4 px-4 pb-4">

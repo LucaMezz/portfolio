@@ -23,6 +23,7 @@ export type ProjectType =
 
 export interface Project {
   name: string;
+  displayName: string;
   thumbnailUrl: string;
   demoUrl: string;
   githubUrl: string;

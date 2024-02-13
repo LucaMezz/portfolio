@@ -12,19 +12,21 @@ export interface ProjectCardProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const ProjectCard = ({ className, project }: ProjectCardProps) => {
+  const projectUrl = `/projects/${encodeURIComponent(project.name)}`;
+
   return (
-    <Link key={project.name} href="/">
+    <Link key={project.name} href={projectUrl}>
       <div className="flex w-full flex-col gap-4 overflow-clip rounded-md border transition-colors hover:bg-border">
         <Image
           src={project.thumbnailUrl}
-          alt={`Image of my ${project.name} project`}
-          width={180}
-          height={100}
+          alt={`Image of my ${project.displayName} project`}
+          width={1920}
+          height={1080}
           className="w-full"
         />
         <div className="flex w-full flex-col gap-4 px-4 pb-4">
           <div>
-            <h1 className="font-semibold">{project.name}</h1>
+            <h1 className="font-semibold">{project.displayName}</h1>
             <div className="flex justify-between">
               <h2 className="text-muted-foreground">{project.tag}</h2>
               <h2 className="text-muted-foreground">{project.date}</h2>
