@@ -1,0 +1,50 @@
+{
+	// Place your code-blip workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Generic Component": {
+		"prefix": ["comp"],
+		"body": [
+			"import React from \"react\";",
+			"",
+			"import { cn } from \"@/lib/utils\";",
+			"",
+			"export interface $1Props extends React.HTMLAttributes<HTMLElement> {}",
+			"",
+			"const $1 = ({ className, ...props }: $1Props) => {",
+			"return <div className={cn(className, \"\")} {...props}></div>;"
+			"};",
+			"",
+			"export default $1;"
+		],
+		"description": "A template for a generic react component"
+	},
+	"Generic Page": {
+		"prefix": ["page"],
+		"body": [
+			"import { NextPage } from \"next\";",
+			"",
+			"type Props = {};",
+			"",
+			"const $1: NextPage<Props> = ({}: Props) => {",
+			"	return <></>;"
+			"};",
+			"",
+			"export default $1;"
+		]
+	}
+}
