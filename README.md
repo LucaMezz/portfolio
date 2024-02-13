@@ -18,5 +18,5 @@ npx create-next-app -e https://github.com/LucaMezz/nextjs-template
 - Tailwind CSS class sorting, merging and linting.
 
 ## License
+© Luca Mezzavilla. All rights reserved.
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
