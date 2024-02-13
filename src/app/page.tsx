@@ -15,6 +15,7 @@ import Hero from "@/components/pages/home/hero";
 import Projects from "@/components/pages/home/projects";
 import Technologies from "@/components/pages/home/technologies";
 import Footer from "@/components/layout/footer";
+import blogPosts from "@/config/blog-posts";
 
 const IndexPage: NextPage = () => {
   return (
@@ -25,7 +26,7 @@ const IndexPage: NextPage = () => {
       <Technologies technologies={technologies} />
       <Experience experience={experience} />
       <Education education={education} />
-      {/* <Featured /> */}
+      <Featured posts={blogPosts} />
     </div>
   );
 };

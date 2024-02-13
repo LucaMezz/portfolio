@@ -19,7 +19,7 @@ const ProjectsPage: NextPage = () => {
 
   const filteredProjects = projects.filter(
     (project) =>
-      project.name.toLowerCase().includes(search.toLowerCase()) ||
+      project.displayName.toLowerCase().includes(search.toLowerCase()) ||
       project.description.toLowerCase().includes(search.toLowerCase()) ||
       project.tag.toLowerCase().includes(search.toLowerCase()) ||
       project.date.toLowerCase().includes(search.toLowerCase())

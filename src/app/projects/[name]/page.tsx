@@ -10,7 +10,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import projects from "@/config/projects";
 
-export interface ProjectDetailsProps extends React.HTMLAttributes<HTMLElement> {
+interface ProjectDetailsProps extends React.HTMLAttributes<HTMLElement> {
   params: {name: string}
 }
 
@@ -20,7 +20,9 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ className, params, ...p
   const project = projects.find(project => project.name === name);
 
   if (project === undefined) {
-    return <h1 className="text-xl text-muted-foreground lg:text-2xl">Could not find project {name}</h1>
+    return <div className="mx-auto flex h-screen w-[100vw] max-w-4xl items-center justify-center">
+      <h1 className="text-xl lg:text-2xl">{"404: Could not find project \""}{name}{"\""}</h1>
+    </div>
   }
 
   return (
