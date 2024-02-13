@@ -11,10 +11,10 @@ import Heading from "@/components/ui/heading";
 import { Input } from "@/components/ui/input";
 import ProjectCard from "@/components/pages/projects/project-card";
 
-export const _metadata: Metadata = {
-  title: "Projects - Luca Mezzavilla",
-  description: "A list of all the personal projects that I have built.",
-};
+// export const metadata: Metadata = {
+//   title: "Projects - Luca Mezzavilla",
+//   description: "A list of all the personal projects that I have built.",
+// };
 
 const ProjectsPage: NextPage = () => {
   const [search, setSearch] = useState("");

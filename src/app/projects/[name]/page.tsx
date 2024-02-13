@@ -14,26 +14,26 @@ export interface ProjectDetails {
   params: { name: string };
 }
 
-export async function _generateMetadata(
-  { params }: ProjectDetails,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const name = decodeURIComponent(params.name);
+// export async function _generateMetadata(
+//   { params }: ProjectDetails,
+//   parent: ResolvingMetadata
+// ): Promise<Metadata> {
+//   const name = decodeURIComponent(params.name);
 
-  const project = projects.find((project) => project.name === name);
+//   const project = projects.find((project) => project.name === name);
 
-  if (project === undefined) {
-    return {};
-  }
+//   if (project === undefined) {
+//     return {};
+//   }
 
-  return {
-    title: `${project.displayName}, Luca Mezzavilla`,
-    description: project.description,
-    openGraph: {
-      images: [project.thumbnailUrl],
-    },
-  };
-}
+//   return {
+//     title: `${project.displayName}, Luca Mezzavilla`,
+//     description: project.description,
+//     openGraph: {
+//       images: [project.thumbnailUrl],
+//     },
+//   };
+// }
 
 const ProjectDetails: React.FC<ProjectDetails> = ({ params }) => {
   const name = decodeURIComponent(params.name);
