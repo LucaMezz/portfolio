@@ -52,11 +52,17 @@ const BlogPage: NextPage = () => {
           />
         </div>
       </div>
-      <div className="grid w-full grid-cols-2 gap-4">
-        {filteredPosts.map((post, index) => (
-          <BlogPostCard post={post} key={index} />
-        ))}
-      </div>
+      {filteredPosts.length > 0 ? (
+        <div className="grid w-full grid-cols-2 gap-4">
+          {filteredPosts.map((post, index) => (
+            <BlogPostCard post={post} key={index} />
+          ))}
+        </div>
+      ) : (
+        <div className="w-full">
+          <h1 className="text-muted-foreground">No blog posts found.</h1>
+        </div>
+      )}
     </div>
   );
 };

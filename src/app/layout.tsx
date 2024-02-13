@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/lib/fonts";
@@ -11,7 +12,7 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name}, Software Engineer`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <SiteHeader />
               <div className="min-h-[calc(100vh-72px)] bg-[radial-gradient(150%_50%_at_50%_50%,rgba(16,123,230,0.8)_0%,rgba(255,255,255,1)_100%)] dark:bg-[radial-gradient(150%_50%_at_50%_50%,rgba(16,123,230,0.15)_50%,rgba(9,9,11,1)_100%)]">
                 {children}
+                <Analytics />
               </div>
               <Footer />
             </div>

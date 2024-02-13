@@ -1,7 +1,7 @@
 "use client";
 
 import { ChangeEventHandler, useState } from "react";
-import { NextPage } from "next";
+import { Metadata, NextPage } from "next";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
@@ -10,6 +10,11 @@ import { Button } from "@/components/ui/button";
 import Heading from "@/components/ui/heading";
 import { Input } from "@/components/ui/input";
 import ProjectCard from "@/components/pages/projects/project-card";
+
+// export const metadata: Metadata = {
+//   title: "Projects - Luca Mezzavilla",
+//   description: "A list of all the personal projects that I have built.",
+// };
 
 const ProjectsPage: NextPage = () => {
   const [search, setSearch] = useState("");
@@ -42,11 +47,17 @@ const ProjectsPage: NextPage = () => {
           />
         </div>
       </div>
-      <div className="grid w-full grid-cols-2 gap-4">
-        {filteredProjects.map((project, index) => (
-          <ProjectCard project={project} key={index} />
-        ))}
-      </div>
+      {filteredProjects.length > 0 ? (
+        <div className="grid w-full grid-cols-2 gap-4">
+          {filteredProjects.map((project, index) => (
+            <ProjectCard project={project} key={index} />
+          ))}
+        </div>
+      ) : (
+        <div className="w-full">
+          <h1 className="text-muted-foreground">No projects found.</h1>
+        </div>
+      )}
     </div>
   );
 };
