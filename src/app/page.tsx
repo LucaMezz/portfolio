@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { Metadata, NextPage } from "next";
 import Link from "next/link";
 
 import blogPosts from "@/config/blog-posts";
@@ -16,6 +16,11 @@ import Featured from "@/components/pages/home/featured";
 import Hero from "@/components/pages/home/hero";
 import Projects from "@/components/pages/home/projects";
 import Technologies from "@/components/pages/home/technologies";
+
+export const metadata: Metadata = {
+  title: "Luca Mezzavilla - Software Engineer",
+  description: siteConfig.description,
+};
 
 const IndexPage: NextPage = () => {
   return (

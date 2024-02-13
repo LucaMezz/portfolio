@@ -18,11 +18,17 @@ const Featured = ({ className, posts, ...props }: FeaturedProps) => {
           <Heading className="text-xl lg:text-2xl">Blog</Heading>
           <h1 className="text-lg lg:text-xl">Featured</h1>
         </div>
-        <div className="grid grid-cols-2 grid-rows-1 gap-4">
-          {posts.slice(0, 2).map((post) => (
-            <BlogPostCard post={post} />
-          ))}
-        </div>
+        {posts.length > 0 ? (
+          <div className="grid grid-cols-2 grid-rows-1 gap-4">
+            {posts.slice(0, 2).map((post) => (
+              <BlogPostCard post={post} />
+            ))}
+          </div>
+        ) : (
+          <div className="w-full">
+            <h1 className="text-muted-foreground">No blog posts found.</h1>
+          </div>
+        )}
       </div>
     </div>
   );

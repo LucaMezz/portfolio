@@ -15,7 +15,7 @@ const SiteLogo = ({ className, ...props }: SiteLogoProps) => {
       {...props}
     >
       <Icon icon={"fa6-solid:code"} className="size-6" />
-      <span className="inline-block font-bold">{siteConfig.name}</span>
+      <span className="inline-block font-bold">LM</span>
     </Link>
   );
 };

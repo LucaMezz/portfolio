@@ -1,17 +1,38 @@
 "use client";
 
 import React from "react";
+import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 import projects from "@/config/projects";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Heading from "@/components/ui/heading";
 
 export interface ProjectDetails {
   params: { name: string };
+}
+
+export async function _generateMetadata(
+  { params }: ProjectDetails,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const name = decodeURIComponent(params.name);
+
+  const project = projects.find((project) => project.name === name);
+
+  if (project === undefined) {
+    return {};
+  }
+
+  return {
+    title: `${project.displayName}, Luca Mezzavilla`,
+    description: project.description,
+    openGraph: {
+      images: [project.thumbnailUrl],
+    },
+  };
 }
 
 const ProjectDetails: React.FC<ProjectDetails> = ({ params }) => {
