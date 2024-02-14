@@ -10,6 +10,7 @@ import technologies from "@/config/technologies";
 import { buttonVariants } from "@/components/ui/button";
 import Footer from "@/components/layout/footer";
 import About from "@/components/pages/home/about";
+import Contact from "@/components/pages/home/contact";
 import Education from "@/components/pages/home/education";
 import Experience from "@/components/pages/home/experience";
 import Featured from "@/components/pages/home/featured";
@@ -18,7 +19,7 @@ import Projects from "@/components/pages/home/projects";
 import Technologies from "@/components/pages/home/technologies";
 
 export const metadata: Metadata = {
-  title: "Luca Mezzavilla - Software Engineer",
+  title: "Luca Mezzavilla, Software Engineer",
   description: siteConfig.description,
 };
 
@@ -32,6 +33,7 @@ const IndexPage: NextPage = () => {
       <Experience experience={experience} />
       <Education education={education} />
       <Featured posts={blogPosts} />
+      <Contact />
     </div>
   );
 };

@@ -6,7 +6,7 @@ export interface AboutProps extends React.HTMLAttributes<HTMLElement> {}
 
 const About = ({ className, ...props }: AboutProps) => {
   return (
-    <div className={cn(className, "w-[80%] px-16 pb-6")} {...props}>
+    <div className={cn(className, "w-full pb-6 md:w-[80%] md:px-16")} {...props}>
       <p className="text-muted-foreground">
         {"Hey, I'm "}
         <span className="font-semibold text-foreground">Luca Mezzavilla</span>

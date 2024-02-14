@@ -28,7 +28,7 @@ const Education = ({ className, ...props }: EducationProps) => {
           <Heading className="text-xl lg:text-2xl">Education</Heading>
           {props.education.map((education) => (
             <div key={education.name} className="w-full rounded-md border p-4">
-              <div className="flex justify-between">
+              <div className="flex flex-col-reverse justify-between gap-2 md:flex-row">
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-4">
                     {education.logoUrl ? (
@@ -60,7 +60,7 @@ const Education = ({ className, ...props }: EducationProps) => {
                       </h1>
                     </div>
                   </div>
-                  <div className="flex-column ml-9 flex gap-1">
+                  <div className="flex-column flex gap-1 md:ml-9">
                     <div>
                       {education.description.map((point) => (
                         <div className="flex gap-1">

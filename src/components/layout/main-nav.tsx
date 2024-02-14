@@ -8,13 +8,21 @@ import { Icons } from "@/components/layout/icons";
 
 import { Button } from "../ui/button";
 
-interface MainNavProps {
+interface MainNavProps extends React.HTMLAttributes<HTMLElement> {
   items?: NavItem[];
+  itemClicked?: () => void;
+  itemClassName?: string;
 }
 
-export function MainNav({ items }: MainNavProps) {
+export function MainNav({
+  items,
+  itemClicked,
+  itemClassName,
+  className,
+  ...props
+}: MainNavProps) {
   return (
-    <div className="flex gap-6 md:gap-10">
+    <div className={cn("flex gap-6 md:gap-10", className)}>
       {items?.length ? (
         <nav className="flex gap-2">
           {items?.map(
@@ -25,9 +33,11 @@ export function MainNav({ items }: MainNavProps) {
                     key={index}
                     href={item.href}
                     className={cn(
-                      "flex items-center text-sm font-medium text-muted-foreground",
-                      item.disabled && "cursor-not-allowed opacity-80"
+                      "flex cursor-pointer items-center text-sm font-medium text-muted-foreground",
+                      item.disabled && "cursor-not-allowed opacity-80",
+                      itemClassName
                     )}
+                    onClick={itemClicked}
                   >
                     {item.title}
                   </Link>

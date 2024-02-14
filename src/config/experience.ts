@@ -10,8 +10,7 @@ const experience: WorkExperience[] = [
     end: "Present",
     location: "Remote",
     description: [
-      "implemented a new user interface according to the provided figma design using TypeScript, React, and ChakraUI",
-      "",
+      "Implemented a new user interface according to the provided figma design using TypeScript, React, and ChakraUI",
     ],
   },
 ];

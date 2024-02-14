@@ -30,7 +30,7 @@ const Experience = ({ className, ...props }: ExperienceProps) => {
             key={`${index}:${experience.employer}`}
             className="w-full rounded-md border p-4"
           >
-            <div className="flex justify-between">
+            <div className="flex flex-col-reverse justify-between gap-2 md:flex-row">
               <div className="flex flex-col gap-4">
                 <div className="flex gap-4">
                   <Image
@@ -61,7 +61,7 @@ const Experience = ({ className, ...props }: ExperienceProps) => {
                     </div>
                   </div>
                 </div>
-                <div className="flex-column ml-9 flex gap-1">
+                <div className="flex-column flex gap-1 md:ml-9">
                   <div>
                     {experience.description.map((point, index) => (
                       <div key={`point-${index}`} className="flex gap-1">
