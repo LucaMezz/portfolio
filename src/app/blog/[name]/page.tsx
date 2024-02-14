@@ -30,7 +30,7 @@ const BlogPostPage: React.FC<BlogPostPage> = ({ params }) => {
   return (
     <div
       className={
-        "mx-auto flex min-h-[calc(100vh-72px)] max-w-4xl flex-col items-start gap-8 bg-background p-8"
+        "mx-auto flex min-h-[calc(100vh-10rem)] max-w-4xl flex-col items-start gap-8 bg-background p-8"
       }
     >
       <Heading>{post.title}</Heading>

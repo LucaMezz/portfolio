@@ -37,7 +37,7 @@ const BlogPage: NextPage = () => {
   );
 
   return (
-    <div className="mx-auto flex min-h-[calc(100vh-72px)] max-w-4xl flex-col items-start justify-start gap-8 bg-background px-8 pb-8 pt-6">
+    <div className="mx-auto flex min-h-[calc(100vh-10rem)] max-w-4xl flex-col items-start justify-start gap-8 bg-background px-8 pb-8 pt-6">
       <div className="sticky top-[72px] flex w-full flex-col items-start gap-4 bg-background py-4">
         <div>
           <Heading className="text-xl lg:text-2xl">Blog</Heading>
