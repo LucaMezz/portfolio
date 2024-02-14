@@ -55,7 +55,7 @@ const ProjectDetails: React.FC<ProjectDetails> = ({ params }) => {
   return (
     <div
       className={
-        "mx-auto flex min-h-[calc(100vh-10rem)] max-w-4xl flex-col items-start gap-8 bg-background p-8"
+        "mx-auto flex min-h-[calc(100vh-10rem)] max-w-4xl flex-col items-start gap-4 bg-background p-8 md:gap-8"
       }
     >
       <Heading>{name}</Heading>
@@ -66,8 +66,8 @@ const ProjectDetails: React.FC<ProjectDetails> = ({ params }) => {
         alt={`${name} Thumbnail`}
         className="w-full rounded-2xl border"
       />
-      <div className="flex w-full justify-between gap-16">
-        <div className="flex justify-between gap-4">
+      <div className="flex w-full justify-between md:gap-16">
+        <div className="flex justify-between gap-2 md:gap-4">
           <Button asChild>
             <Link
               href={project.demoUrl}

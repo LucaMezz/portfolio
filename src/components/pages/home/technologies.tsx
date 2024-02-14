@@ -43,7 +43,7 @@ const TechnologySection = ({ className, ...props }: TechnologySection) => {
   return (
     <div className="flex w-full flex-col gap-y-2">
       <h2>{ props.title }</h2>
-      <div className="grid w-full grid-cols-4 gap-2">
+      <div className="grid w-full grid-cols-2 gap-2 md:grid-cols-4">
         {
           props.technologies.map(technology => (
             <Button key={technology.name} variant="outline" className="h-12 justify-start gap-2 rounded-md border p-2" asChild>

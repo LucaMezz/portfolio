@@ -16,15 +16,15 @@ const Hero = ({ className, ...props }: HeroProps) => {
   return (
     <div className={cn(className, "py-8")} {...props}>
       <div className="flex justify-between gap-4">
-        <div className="flex space-x-4">
+        <div className="flex flex-col gap-4 md:flex-row">
           <div className="size-12 rounded-full bg-accent-foreground">
             {/* <Image src={""} alt={""} className="size-full" /> */}
           </div>
-          <div className="flex-col space-y-4">
+          <div className="w-full flex-col space-y-4 md:w-max">
             <Heading className="">Luca Mezzavilla</Heading>
             <div>
               <h2 className="text-xl font-semibold">Software Engineer</h2>
-              <p className=" text-muted-foreground">
+              <p className="text-muted-foreground">
                 Building digital solutions that solve real world problems
               </p>
             </div>

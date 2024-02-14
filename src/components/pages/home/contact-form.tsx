@@ -57,7 +57,7 @@ const ContactForm: React.FC<ContactForm> = ({ ...props }) => {
             control={form.control}
             name="name"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="w-full">
                 <FormControl>
                   <Input placeholder="Name" {...field} />
                 </FormControl>
@@ -70,7 +70,7 @@ const ContactForm: React.FC<ContactForm> = ({ ...props }) => {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="w-full">
                 <FormControl>
                   <Input placeholder="Email" type="email" {...field} />
                 </FormControl>

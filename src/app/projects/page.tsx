@@ -33,7 +33,7 @@ const ProjectsPage: NextPage = () => {
 
   return (
     <div className="mx-auto flex min-h-[calc(100vh-10rem)] max-w-4xl flex-col items-start justify-start gap-8 bg-background px-8 pb-8 pt-6">
-      <div className="sticky top-[72px] flex w-full flex-col items-start gap-4 bg-background py-4">
+      <div className="sticky top-[56px] flex w-full flex-col items-start gap-4 bg-background py-4 md:top-[72px]">
         <div>
           <Heading className="text-xl lg:text-2xl">Projects</Heading>
           <h1>A list of all the personal projects that I have built.</h1>
@@ -48,7 +48,7 @@ const ProjectsPage: NextPage = () => {
         </div>
       </div>
       {filteredProjects.length > 0 ? (
-        <div className="grid w-full grid-cols-2 gap-4">
+        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
           {filteredProjects.map((project, index) => (
             <ProjectCard project={project} key={index} />
           ))}
