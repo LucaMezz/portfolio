@@ -20,7 +20,9 @@ const Contact = ({ className, ...props }: ContactProps) => {
       <div className="flex w-full flex-col items-start gap-y-4">
         <Heading className="text-xl lg:text-2xl">Contact</Heading>
         <div className="flex w-full flex-col justify-around gap-8 md:flex-row">
-          <ContactForm />
+          <div className="flex w-full justify-center">
+            <ContactForm />
+          </div>
           <div className="flex h-max flex-col gap-4 rounded-md border p-4">
             <Link
               href={`mailto:${siteConfig.links.email}`}

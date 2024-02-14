@@ -50,9 +50,9 @@ const ContactForm: React.FC<ContactForm> = ({ ...props }) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-y-2"
+        className="flex max-w-[28rem] grow flex-col gap-y-2 md:max-w-none"
       >
-        <div className="flex justify-between gap-2">
+        <div className="flex flex-col justify-between gap-2 md:flex-row">
           <FormField
             control={form.control}
             name="name"
