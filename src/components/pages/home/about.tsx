@@ -17,7 +17,7 @@ const About = ({ className, ...props }: AboutProps) => {
           Victoria, Australia
         </span>
         {". I work as a "}
-        <span className="font-semibold text-foreground">Software Engineer</span>
+        <span className="font-semibold text-foreground">Freelance Software Engineer</span>
         {" and always strive to deliver "}
         <span className="font-semibold text-foreground">
           High-quality software

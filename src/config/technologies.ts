@@ -69,7 +69,7 @@ const technologies: Technologies = {
     {
       name: "Chakra UI",
       icon: "simple-icons:chakraui",
-      href: "https://chakraui.com/",
+      href: "https://chakra-ui.com/",
     },
   ],
   services: [

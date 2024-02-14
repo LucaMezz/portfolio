@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Heading from "@/components/ui/heading";
+import GithubStats from "./github-stats";
 
 export interface HeroProps extends React.HTMLAttributes<HTMLElement> {}
 
@@ -54,6 +55,7 @@ const Hero = ({ className, ...props }: HeroProps) => {
             </div>
           </div>
         </div>
+        {/* <GithubStats /> */}
         {/* <div className="">
           <div className="flex w-max gap-2 rounded-md border p-2">
             <Icon icon={"mdi:eye"} className="size-6" />
